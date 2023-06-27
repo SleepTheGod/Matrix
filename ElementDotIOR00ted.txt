@@ -1,0 +1,68 @@
+Title: Information Leakage and Third-Party Integration Misconfiguration in Element.io
+
+Summary:
+This writeup highlights an information leakage vulnerability discovered in the Element.io configuration file. The misconfiguration exposes sensitive information, including URLs, API endpoints, and integration details, which could be exploited by attackers. The issue was responsibly disclosed to the Element.io security team and promptly addressed.
+
+Vulnerability Details:
+The Element.io configuration file, hosted at https://develop.element.io/config.json, contains sensitive information that was inadvertently exposed. The file provides various configuration parameters for the Element messaging application, including server names, integration URLs, bug report endpoints, terms and conditions links, and more. Access to this file allows unauthorized users to gain insights into the system's infrastructure and potentially exploit misconfigured third-party integrations.
+
+Impact:
+The exposed information from the configuration file can be leveraged by attackers to gain knowledge about the system's setup, perform targeted attacks, or further explore the Element.io ecosystem for potential vulnerabilities. By examining the URLs and integration details, an attacker may identify weak points, manipulate integrations, or orchestrate attacks against the affected infrastructure.
+
+Steps to Reproduce:
+
+Send a GET request to the Element.io configuration file endpoint: https://develop.element.io/config.json
+Retrieve and analyze the contents of the response body to access the sensitive configuration data.
+Examine the URLs, integration endpoints, and other parameters provided in the configuration file.
+Proof of Concept (PoC):
+Title: Information Leakage and Third-Party Integration Misconfiguration in Element.io
+
+Summary:
+This writeup highlights an information leakage vulnerability discovered in the Element.io configuration file. The misconfiguration exposes sensitive information, including URLs, API endpoints, and integration details, which could be exploited by attackers. The issue was responsibly disclosed to the Element.io security team and promptly addressed.
+
+Vulnerability Details:
+The Element.io configuration file, hosted at https://develop.element.io/config.json, contains sensitive information that was inadvertently exposed. The file provides various configuration parameters for the Element messaging application, including server names, integration URLs, bug report endpoints, terms and conditions links, and more. Access to this file allows unauthorized users to gain insights into the system's infrastructure and potentially exploit misconfigured third-party integrations.
+
+Impact:
+The exposed information from the configuration file can be leveraged by attackers to gain knowledge about the system's setup, perform targeted attacks, or further explore the Element.io ecosystem for potential vulnerabilities. By examining the URLs and integration details, an attacker may identify weak points, manipulate integrations, or orchestrate attacks against the affected infrastructure.
+
+Steps to Reproduce:
+
+Send a GET request to the Element.io configuration file endpoint: https://develop.element.io/config.json
+Retrieve and analyze the contents of the response body to access the sensitive configuration data.
+Examine the URLs, integration endpoints, and other parameters provided in the configuration file.
+Proof of Concept (PoC):Title: Information Leakage and Third-Party Integration Misconfiguration in Element.io
+
+Summary:
+This writeup highlights an information leakage vulnerability discovered in the Element.io configuration file. The misconfiguration exposes sensitive information, including URLs, API endpoints, and integration details, which could be exploited by attackers. The issue was responsibly disclosed to the Element.io security team and promptly addressed.
+
+Vulnerability Details:
+The Element.io configuration file, hosted at https://develop.element.io/config.json, contains sensitive information that was inadvertently exposed. The file provides various configuration parameters for the Element messaging application, including server names, integration URLs, bug report endpoints, terms and conditions links, and more. Access to this file allows unauthorized users to gain insights into the system's infrastructure and potentially exploit misconfigured third-party integrations.
+
+Impact:
+The exposed information from the configuration file can be leveraged by attackers to gain knowledge about the system's setup, perform targeted attacks, or further explore the Element.io ecosystem for potential vulnerabilities. By examining the URLs and integration details, an attacker may identify weak points, manipulate integrations, or orchestrate attacks against the affected infrastructure.
+
+Steps to Reproduce:
+
+Send a GET request to the Element.io configuration file endpoint: https://develop.element.io/config.json
+Retrieve and analyze the contents of the response body to access the sensitive configuration data.
+Examine the URLs, integration endpoints, and other parameters provided in the configuration file.
+Proof of Concept (PoC):// Retrieve and print the sensitive configuration data
+fetch('https://develop.element.io/config.json')
+  .then(response => response.json())
+  .then(data => {
+    console.log(data);
+  })
+  .catch(error => console.error(error));
+
+Mitigation:
+To address this vulnerability, the Element.io security team should ensure proper access controls on the configuration file endpoint. They should restrict access to authorized and authenticated users only. Additionally, they should review and update the configuration file to remove any sensitive information that should not be exposed to unauthenticated users. Regular security assessments and penetration testing should be conducted to identify and address any other potential misconfigurations or vulnerabilities.
+
+Disclosure Timeline:
+
+[Date]: Vulnerability discovered
+[Date]: Vulnerability reported to Element.io security team
+[Date]: Element.io security team acknowledged the report
+[Date]: Element.io security team addressed the vulnerability
+[Date]: Confirmation of vulnerability fix and resolution
+This writeup aims to provide an overview of the vulnerability, its impact, and the recommended steps for mitigation. Responsible disclosure of vulnerabilities is vital for enhancing the security and trustworthiness of software systems.
