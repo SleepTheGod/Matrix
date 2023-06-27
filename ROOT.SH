@@ -1,0 +1,19 @@
+https://develop.element.io/config.json
+admin@unredacted.org
+admin+frantech.ca@unredacted.org
+unredacted.org
+matrix.unredacted.org
+element.unredacted.org
+hydrogen.unredacted.org
+jitsi.unredacted.org
+xmr.unredacted.org
+https://matrix.org/_matrix/client/r0/keys/query
+https://matrix.org/_matrix/client/r0/keys/upload/guest_device
+https://matrix.org/.well-known/matrix/client?_cacheBuster=931991305010636
+https://matrix.org/.well-known/matrix/server (lfi)
+https://matrix.org/.well-known/nodeinfo
+https://matrix.org/.well-known/openid-configuration
+https://matrix.org/.well-known/pgp-key.txt
+https://matrix.org/.well-known/security.txt
+https://matrix.org/.well-known/SHA256
+https://matrix.org/.well-known/trust.txt
